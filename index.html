@@ -54,7 +54,7 @@
             эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <a href="" class="button">Заказать услугу</a>
+          <button data-modal-open class="button">Заказать услугу</button>
         </section>
       </div>
       <section class="section">
@@ -362,6 +362,19 @@
         </div>
       </section>
     </main>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quae
+          quis non qui! Odio voluptatum perspiciatis, eligendi dicta ex
+          accusamus ipsam excepturi modi, facere quas dolor quos. Ut, incidunt
+          facere?
+        </p>
+        <button data-modal-close>Отправить</button>
+      </div>
+    </div>
+
     <footer class="page-footer">
       <div class="container">
         <div class="footer">
@@ -425,5 +438,6 @@
         <p class="copyright container">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
