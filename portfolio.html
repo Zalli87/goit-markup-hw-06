@@ -53,11 +53,21 @@
       <section class="works container">
         <h1 class="work-title visually-hidden">Наши работы</h1>
         <ul class="filter">
-          <li class="item"><button type="button">Все</button></li>
-          <li class="item"><button type="button">Веб сайты</button></li>
-          <li class="item"><button type="button">Приложения</button></li>
-          <li class="item"><button type="button">Дизайн</button></li>
-          <li class="item"><button type="button">Маркетинг</button></li>
+          <li class="item">
+            <button type="button" class="filter-button">Все</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-button">Веб сайты</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-button">Приложения</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-button">Дизайн</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-button">Маркетинг</button>
+          </li>
         </ul>
         <ul class="works-list">
           <li class="item">
@@ -313,9 +323,21 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="subscribe">
             <b>подпишитесь на рассылку</b>
-            <a href="" class="footer-button">Подписаться</a>
+
+            <form>
+              <div class="subscribe-form">
+                <label for="mail"></label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  id="mail"
+                />
+                <button type="submit" class="footer-button">Подписаться</button>
+              </div>
+            </form>
           </div>
         </div>
         <p class="copyright container">2020 | Developed by GoIT Students</p>

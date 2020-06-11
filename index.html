@@ -54,7 +54,7 @@
             эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button data-modal-open class="button">Заказать услугу</button>
+          <button data-modal-open class="modal-button">Заказать услугу</button>
         </section>
       </div>
       <section class="section">
@@ -365,13 +365,41 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quae
-          quis non qui! Odio voluptatum perspiciatis, eligendi dicta ex
-          accusamus ipsam excepturi modi, facere quas dolor quos. Ut, incidunt
-          facere?
-        </p>
-        <button data-modal-close>Отправить</button>
+        <b>Оставьте свои данные, мы вам перезвоним</b>
+        <form class="form" action="">
+          <div class="form-feild">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-feild">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="form-feild">
+            <label for="mail">E-mail</label>
+            <input type="email" name="email" id="mail" />
+          </div>
+          <div class="form-feild">
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-feild">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+          </div>
+          <button type="submit" class="modal-button" data-modal-close>
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
 
@@ -430,9 +458,22 @@
               </li>
             </ul>
           </div>
-          <div>
+
+          <div class="subscribe">
             <b>подпишитесь на рассылку</b>
-            <a href="" class="footer-button">Подписаться</a>
+
+            <form>
+              <div class="subscribe-form">
+                <label for="mail"></label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  id="mail"
+                />
+                <button type="submit" class="footer-button">Подписаться</button>
+              </div>
+            </form>
           </div>
         </div>
         <p class="copyright container">2020 | Developed by GoIT Students</p>
