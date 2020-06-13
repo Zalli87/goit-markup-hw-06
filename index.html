@@ -365,34 +365,55 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <b>Оставьте свои данные, мы вам перезвоним</b>
-        <form class="form" action="">
+        <b class="feedback-text">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="feedback" action="">
           <div class="form-feild">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
+            <input
+              class="feedback-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" "
+            />
+            <label class="feedback-label" for="name">Имя</label>
           </div>
 
           <div class="form-feild">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <input
+              class="feedback-input"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder=" "
+              autocomplete="none"
+            />
+            <label class="feedback-label" for="tel">Телефон</label>
           </div>
 
           <div class="form-feild">
-            <label for="mail">E-mail</label>
-            <input type="email" name="email" id="mail" />
+            <input
+              class="feedback-input"
+              type="email"
+              name="email"
+              id="mail"
+              placeholder=" "
+            />
+            <label class="feedback-label" for="mail">E-mail</label>
           </div>
-          <div class="form-feild">
-            <label for="comment">Комментарий</label>
+          <div class="comment-feild">
             <textarea
+              class="comment-input"
               name="comment"
               id="comment"
               cols="30"
-              rows="10"
+              rows="6"
+              placeholder=" "
             ></textarea>
+            <label class="comment-label" for="comment">Комментарий</label>
           </div>
-          <div class="form-feild">
+          <div class="checkbox-feild">
             <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
+            <label class="policy-label" for="policy"
               >Соглашаюсь с рассылкой и принимаю Условия договора</label
             >
           </div>
@@ -425,7 +446,7 @@
                   class="footersocial-link"
                   href=""
                   aria-label="Ссылка на Instagram"
-                  ><svg class="fotersocial-icon" width="59" height="47">
+                  ><svg class="footersocial-icon">
                     <use href="./images/sprite.svg#instagram"></use></svg
                 ></a>
               </li>
@@ -434,7 +455,7 @@
                   class="footersocial-link"
                   href=""
                   aria-label="Ссылка на Twitter"
-                  ><svg class="fotersocial-icon" width="59" height="47">
+                  ><svg class="footersocial-icon">
                     <use href="./images/sprite.svg#twitter"></use></svg
                 ></a>
               </li>
@@ -443,7 +464,7 @@
                   class="footersocial-link"
                   href=""
                   aria-label="Ссылка на Facebook"
-                  ><svg class="fotersocial-icon" width="59" height="47">
+                  ><svg class="footersocial-icon">
                     <use href="./images/sprite.svg#facebook"></use></svg
                 ></a>
               </li>
@@ -452,29 +473,25 @@
                   class="footersocial-link"
                   href=""
                   aria-label="Ссылка на LinkedIn"
-                  ><svg class="fotersocial-icon" width="59" height="47">
+                  ><svg class="footersocial-icon">
                     <use href="./images/sprite.svg#linkedin"></use></svg
                 ></a>
               </li>
             </ul>
           </div>
-
-          <div class="subscribe">
-            <b>подпишитесь на рассылку</b>
-
-            <form>
-              <div class="subscribe-form">
-                <label for="mail"></label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  id="mail"
-                />
-                <button type="submit" class="footer-button">Подписаться</button>
-              </div>
-            </form>
-          </div>
+          <form>
+            <div class="subscribe-form">
+              <label for="mail"><b>подпишитесь на рассылку</b></label>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="mail"
+                class="subscribe-input"
+              />
+              <button type="submit" class="footer-button">Подписаться</button>
+            </div>
+          </form>
         </div>
         <p class="copyright container">2020 | Developed by GoIT Students</p>
       </div>
