@@ -365,6 +365,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="close-button" data-modal-close></button>
         <b class="feedback-text">Оставьте свои данные, мы вам перезвоним</b>
         <form class="feedback" action="">
           <div class="form-feild">
@@ -376,6 +377,9 @@
               placeholder=" "
             />
             <label class="feedback-label" for="name">Имя</label>
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/sprite.svg#person-black"></use>
+            </svg>
           </div>
 
           <div class="form-feild">
@@ -388,6 +392,9 @@
               autocomplete="none"
             />
             <label class="feedback-label" for="tel">Телефон</label>
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/sprite.svg#phone-black"></use>
+            </svg>
           </div>
 
           <div class="form-feild">
@@ -399,6 +406,9 @@
               placeholder=" "
             />
             <label class="feedback-label" for="mail">E-mail</label>
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/sprite.svg#email-black"></use>
+            </svg>
           </div>
           <div class="comment-feild">
             <textarea
@@ -411,13 +421,13 @@
             ></textarea>
             <label class="comment-label" for="comment">Комментарий</label>
           </div>
-          <div class="checkbox-feild">
-            <input type="checkbox" name="policy" id="policy" />
-            <label class="policy-label" for="policy"
-              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            <label class="policy-label" ">
+              <input type="checkbox" name="policy" class="checkbox"/>
+              <span class="checkbox-icon"></span>
+              <p class="policy-text">Соглашаюсь с рассылкой и
+              принимаю <a href="" class="checkbox-link" >Условия договора</a> </p></label
             >
-          </div>
-          <button type="submit" class="modal-button" data-modal-close>
+          <button type="submit" class="modal-button">
             Отправить
           </button>
         </form>
